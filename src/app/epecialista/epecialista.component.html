@@ -1,0 +1,159 @@
+<router-outlet>
+
+    <!-- component -->
+    <nav class="bg-orange-500 flex  justify-between px-10 items-center py-6">
+        <div class="flex items-center space-x-2">
+            <svg fill="#000000" height="50px" width="50px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 297 297" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M144.865,162.638v11.946c0,4.11-2.164,8.014-5.817,9.897c-4.225,2.178-9.266,1.358-12.574-1.948l-7.817-7.819l-7.352,7.352 l18.259,18.258c2.034,2.035,3.155,4.74,3.155,7.618v79.593c0,5.226,4.237,9.463,9.463,9.463h15.763 c5.226,0,9.463-4.237,9.463-9.463V219.91c0-2.878,1.12-5.583,3.155-7.618l15.133-15.133l-7.352-7.352l-4.691,4.692 c-3.307,3.303-8.339,4.122-12.565,1.953c-3.657-1.877-5.826-5.779-5.826-9.889l0-23.925H144.865z"></path> <path d="M289.432,122.216c0-34.74-26.947-63.303-61.037-65.881C216.498,22.81,184.664,0,148.5,0S80.502,22.81,68.605,56.336 c-34.09,2.578-61.037,31.141-61.037,65.881c0,17.725,7.026,34.476,19.469,46.838c-0.501,3.078-0.753,6.191-0.753,9.307 c0,32.009,26.041,58.05,58.049,58.05h34.491v-27.176l-19.552-19.551c-2.034-2.033-3.156-4.739-3.156-7.618 c0-2.879,1.121-5.585,3.158-7.619l11.765-11.766c4.201-4.199,11.035-4.199,15.236,0l4.695,4.696v-7.861 c0-5.94,4.833-10.773,10.773-10.773h16.641c5.94,0,10.773,4.832,10.773,10.773v19.828l1.569-1.57 c2.034-2.034,4.74-3.155,7.617-3.155c2.878-0.001,5.584,1.12,7.619,3.155l11.766,11.766c0,0,0,0,0.001,0 c4.2,4.201,4.2,11.036,0,15.236l-16.426,16.426v15.209h31.365c32.008,0,58.049-26.041,58.049-58.05 c0-3.116-0.252-6.229-0.753-9.307C282.406,156.692,289.432,139.941,289.432,122.216z"></path> </g> </g></svg>
+          <button routerLink="" class="text-white font-bold text-xl cursor-pointer">SeniorConnect</button>
+        </div>
+        <div class="flex items-center space-x-8 font-bold text-white">
+          <button routerLink="/perfil"class="cursor-pointer text-lg">Perfil</button>
+          <button routerLink="/login" class="cursor-pointer text-lg">Login</button>
+          <button routerLink="/registro" class="cursor-pointer text-lg">Register</button>
+        </div>
+      </nav>
+    <!-- component -->
+    <!-- component -->
+    <!-- component -->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"></script>
+    </head>
+    <body>
+        <div class="h-full bg-gray-200 p-8">
+            <div class="bg-white rounded-lg shadow-xl pb-8">
+               
+                <div class="w-full h-[250px]">
+                    <img src="https://vojislavd.com/ta-template-demo/assets/img/profile-background.jpg" class="w-full h-full rounded-tl-lg rounded-tr-lg">
+                </div>
+                <div class="flex flex-col items-center -mt-20">
+                    <img src="https://i0.wp.com/thehappening.com/wp-content/uploads/2017/07/foto-perfil-5.jpg?resize=1024%2C694&ssl=1" class="w-40 border-4 border-white rounded-full">
+                    <div class="flex items-center space-x-2 mt-2">
+                        <p class="text-2xl">Jose Montolla</p>
+                        <span class="bg-blue-500 rounded-full p-1" title="Verified">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="text-gray-100 h-2.5 w-2.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                        </span>
+                    </div>
+                    
+                    <p class="text-sm text-gray-500">New York, USA</p>
+                </div>
+                <div class="flex-1 flex flex-col items-center lg:items-end justify-end px-8 mt-2">
+                    <div class="flex items-center space-x-4 mt-2">
+                        <button class="flex items-center bg-blue-600 hover:bg-blue-700 text-gray-100 px-4 py-2 rounded text-sm space-x-2 transition duration-100">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M8 9a3 3 0 100-6 3 3 0 000 6zM8 11a6 6 0 016 6H2a6 6 0 016-6zM16 7a1 1 0 10-2 0v1h-1a1 1 0 100 2h1v1a1 1 0 102 0v-1h1a1 1 0 100-2h-1V7z"></path>
+                            </svg>
+                            <span>Contactar</span>
+                        </button>
+                        <button class="flex items-center bg-blue-600 hover:bg-blue-700 text-gray-100 px-4 py-2 rounded text-sm space-x-2 transition duration-100">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M18 5v8a2 2 0 01-2 2h-5l-5 4v-4H4a2 2 0 01-2-2V5a2 2 0 012-2h12a2 2 0 012 2zM7 8H5v2h2V8zm2 0h2v2H9V8zm6 0h-2v2h2V8z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span>Mensajear</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="my-4 flex flex-col 2xl:flex-row space-y-4 2xl:space-y-0 2xl:space-x-4">
+                <div class="w-full flex flex-col 2xl:w-1/3">
+                    <div class="flex-1 bg-white rounded-lg shadow-xl p-8">
+                        <h4 class="text-xl text-gray-900 font-bold">Informacion Personal</h4>
+                        <ul class="mt-2 text-gray-700">
+                            <li class="flex border-y py-2">
+                                <span class="font-bold w-24">Nombre Completo:</span>
+                                <span class="text-gray-700">Jose Montolla</span>
+                            </li>
+                            <li class="flex border-b py-2">
+                                <span class="font-bold w-24">Cumpleaños:</span>
+                                <span class="text-gray-700">24 Jul, 1991</span>
+                            </li>
+                
+                    
+                            <li class="flex border-b py-2">
+                                <span class="font-bold w-24">Telefono:</span>
+                                <span class="text-gray-700">(123) 123-1234</span>
+                            </li>
+                            <li class="flex border-b py-2">
+                                <span class="font-bold w-24">Correo:</span>
+                                <span class="text-gray-700">amandaross@example.com</span>
+                            </li>
+                            <li class="flex border-b py-2">
+                                <span class="font-bold w-24">Ubicacion:</span>
+                                <span class="text-gray-700">New York, US</span>
+                            </li>
+                            <li class="flex border-b py-2">
+                                <span class="font-bold w-24">Especialidad:</span>
+                                <span class="text-gray-700">Fisioterapia</span>
+                            </li>
+                            <li class="flex border-b py-2">
+                                <span class="font-bold w-24">Tipo de Rutina:</span>
+                                <span class="text-gray-700">Rutina I</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="flex flex-col w-full 2xl:w-2/3">
+                    <div class="flex-1 bg-white rounded-lg shadow-xl p-8">
+                        <h4 class="text-xl text-gray-900 font-bold">Sobre mi</h4>
+                        <p class="mt-2 text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptates obcaecati numquam error et ut fugiat asperiores. Sunt nulla ad incidunt laboriosam, laudantium est unde natus cum numquam, neque facere. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, magni odio magnam commodi sunt ipsum eum! Voluptas eveniet aperiam at maxime, iste id dicta autem odio laudantium eligendi commodi distinctio!</p>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+    
+        <script>
+    
+                const DATA_SET_VERTICAL_BAR_CHART_1 = [68.106, 26.762, 94.255, 72.021, 74.082, 64.923, 85.565, 32.432, 54.664, 87.654, 43.013, 91.443];
+    
+                const labels_vertical_bar_chart = ['January', 'February', 'Mart', 'April', 'May', 'Jun', 'July', 'August', 'September', 'October', 'November', 'December'];
+    
+                const dataVerticalBarChart= {
+                    labels: labels_vertical_bar_chart,
+                    datasets: [
+                        {
+                            label: 'Revenue',
+                            data: DATA_SET_VERTICAL_BAR_CHART_1,
+                            borderColor: 'rgb(54, 162, 235)',
+                            backgroundColor: 'rgba(54, 162, 235, 0.5)',
+                        }
+                    ]
+                };
+                const configVerticalBarChart = {
+                    type: 'bar',
+                    data: dataVerticalBarChart,
+                    options: {
+                        responsive: true,
+                        plugins: {
+                            legend: {
+                                position: 'top',
+                            },
+                            title: {
+                                display: true,
+                                text: 'Last 12 Months'
+                            }
+                        }
+                    },
+                };
+    
+                var verticalBarChart = new Chart(
+                    document.getElementById('verticalBarChart'),
+                    configVerticalBarChart
+                );
+            </script>
+    </body>
+    </html>
+    
+    
+    </router-outlet>

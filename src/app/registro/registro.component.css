@@ -1,0 +1,15 @@
+.mensaje {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    color: white;
+  }
+  
+  .mensaje.error {
+    background-color: red;
+  }
+  
+  .mensaje:not(.error) {
+    background-color: green;
+  }
+  
